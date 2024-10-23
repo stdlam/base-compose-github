@@ -1,0 +1,44 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+# https://docs.fastlane.tools/getting-started/android/beta-deployment
+# brew install fastlane
+# fastlane init
+# fastlane add_plugin firebase_app_distribution
+# firebase_cli_token: fastlane run firebase_app_distribution_login
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Build Dev"
+  lane :buildDev do
+      gradle(task: "clean")
+      gradle(task: 'assemble', flavor: 'Dev', build_type: 'Release')
+  end
+
+  desc "Deploy a new version to the Firebase"
+  lane :deployDev do |options|
+      log = options[:log] || "Lots of amazing new features to test out!"
+      buildDev
+      firebase_app_distribution(
+          app: "<app_id>",
+          firebase_cli_token: "<token>",
+          testers: "bm.hcmc.000@gmail.com",
+          release_notes: log
+      )
+  end
+
+end

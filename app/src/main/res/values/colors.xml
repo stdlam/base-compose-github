@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@color/neutral_900</color>
+    <color name="color_primary_variant">@color/neutral_0</color>
+    <color name="color_on_primary">@color/neutral_0</color>
+    <color name="color_secondary">@color/neutral_900</color>
+    <color name="color_secondary_variant">@color/neutral_900</color>
+    <color name="color_on_secondary">@color/neutral_900</color>
+    <color name="color_background">@color/neutral_0</color>
+    <color name="color_status_bar">@color/neutral_0</color>
+    <color name="color_navigation_bar">@color/neutral_900</color>
+    <color name="color_item_menu_non_checked">#AEAEAE</color>
+
+    <color name="color_splashscreen_background">@color/neutral_0</color>
+    <color name="color_transparent">@android:color/transparent</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_12">#1FFFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_900">#0A0A0A</color>
+    <color name="black_700">#333333</color>
+    <color name="black_30">#4D000000</color>
+
+    <color name="grey_100">#E3E3E3</color>
+    <color name="grey_300">#AEAEAE</color>
+    <color name="blue_400">#5F81E0</color>
+    <color name="blue_500">#3762D8</color>
+    <color name="grey_400">#C8C8C8</color>
+    <color name="grey_500">#676767</color>
+    <color name="grey_600">#4D4D4D</color>
+    <color name="blue_hyperlink">#007FFF</color>
+
+    <color name="primary_50">#FFF5E9</color>
+    <color name="primary_100">#FFEED9</color>
+    <color name="primary_200">#FFE0B9</color>
+    <color name="primary_400">#FFAE47</color>
+    <color name="primary_600">#EB8400</color>
+    <color name="primary_500">#FF8F00</color>
+    <color name="primary_500_60">#99FF8F00</color>
+
+    <color name="neutral_600">#4D4D4D</color>
+    <color name="neutral_900">#0A0A0A</color>
+    <color name="neutral_700">#333333</color>
+    <color name="neutral_400">#838695</color>
+    <color name="neutral_500">#676767</color>
+    <color name="neutral_300">#AEAEAE</color>
+    <color name="neutral_200">#CCCCCC</color>
+    <color name="neutral_100">#E3E3E3</color>
+    <color name="neutral_50">#F0F0F0</color>
+    <color name="neutral_25">#F6F6F6</color>
+    <color name="neutral_0">#FFFFFF</color>
+
+    <color name="second_800">#1B316C</color>
+    <color name="second_500">#3762D8</color>
+    <color name="second_400">#5F81E0</color>
+    <color name="second_300">#A6B5EA</color>
+    <color name="second_100">#E4EAFA</color>
+    <color name="second_50">#F3F6FD</color>
+
+    <color name="splash_blur_1">#48594C9D</color>
+    <color name="splash_blur_2">#485D3AC2</color>
+    <color name="splash_blur_3">#484A17D9</color>
+    <color name="splash_blur_4">#486929BB</color>
+
+    <color name="error_50">#FDF1F0</color>
+    <color name="error_100">#FF8078</color>
+    <color name="error_500">#E10E00</color>
+    <color name="error_700">#AA0B00</color>
+    <color name="red_10">#1AAA0B00</color>
+    <color name="red_50">#80AA0B00</color>
+    <color name="red_0">#00AA0B00</color>
+    <color name="green_50">#8083F501</color>
+    <color name="yellow_50">#77C6BE20</color>
+    <color name="blue_50">#80012AF5</color>
+
+    <color name="success_50">#EEFAF5</color>
+    <color name="success_500">#12B76A</color>
+
+    <!-- Splash screen Color -->
+
+    <color name="butterfly_500">#594C9D</color>
+
+</resources>

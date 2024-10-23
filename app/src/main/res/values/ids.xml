@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idRootActivity" type="id" />
+    <item name="tagWelcomeSlideReached" type="id" />
+    <item name="includeNavBar" type="id" />
+    <item name="navBar" type="id" />
+    <item name="snackAnchor" type="id" />
+    <item name="tagView" type="id" />
+    <item name="tagView1" type="id" />
+    <item name="tagView2" type="id" />
+    <item name="tagViewFocus" type="id" />
+</resources>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseButton" parent="Widget.AppCompat.Button">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/prompt_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontWeight">500</item>
+    </style>
+
+    <style name="BaseTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/prompt</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="BaseEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/prompt</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="AppButton" parent="BaseButton">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">20dp</item>
+    </style>
+
+    <style name="AppTextView" parent="BaseTextView">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="AppEditText" parent="BaseEditText">
+        <item name="android:layout_height">46dp</item>
+        <item name="android:minHeight">46dp</item>
+        <item name="android:textColor">#0A0A0A</item>
+        <item name="android:textColorHint">#AEAEAE</item>
+        <item name="android:background">@drawable/input_normal</item>
+        <item name="android:paddingStart">@dimen/long_12dp</item>
+        <item name="android:paddingEnd">@dimen/long_12dp</item>
+        <item name="android:drawablePadding">@dimen/long_8dp</item>
+        <item name="android:selectAllOnFocus">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text</item>
+        <item name="lineHeight">20dp</item>
+    </style>
+
+    <style name="AppButton.Positive">
+        <item name="android:minWidth">@dimen/long_140dp</item>
+        <item name="android:background">@drawable/button_positive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_button_positive</item>
+        <item name="android:paddingStart">@dimen/long_16dp</item>
+        <item name="android:paddingEnd">@dimen/long_16dp</item>
+    </style>
+
+    <style name="AppButton.Negative">
+        <item name="android:minWidth">@dimen/long_140dp</item>
+        <item name="android:background">@drawable/button_negative</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_button_negative</item>
+        <item name="android:paddingStart">@dimen/long_16dp</item>
+        <item name="android:paddingEnd">@dimen/long_16dp</item>
+    </style>
+
+    <style name="AppButton.Neutral">
+        <item name="android:background">@drawable/button_neutral</item>
+        <item name="android:textColor">@color/black_900</item>
+    </style>
+
+    <style name="BaseText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/prompt</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Display xs -->
+    <style name="BaseDisplayXs" parent="BaseText">
+        <item name="android:textSize">24dp</item>
+        <item name="android:lineSpacingExtra">7dp</item>
+        <item name="android:letterSpacing">-0.005</item>
+    </style>
+
+    <style name="Display.Xs.Medium" parent="BaseDisplayXs">
+        <item name="android:fontFamily">@font/prompt_medium</item>
+    </style>
+
+    <style name="Display.Xs.Semibold" parent="BaseDisplayXs">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <!-- Display sm -->
+    <style name="BaseDisplaySm" parent="BaseText">
+        <item name="android:textColor">@color/neutral_0</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Display.Sm.Bold" parent="BaseDisplaySm">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <!-- Text sm -->
+    <style name="BaseTextSm" parent="BaseText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="Text.Sm.Regular" parent="BaseTextSm">
+        <item name="android:fontFamily">@font/prompt</item>
+    </style>
+
+    <style name="Text.Sm.Regular.Neutral300">
+        <item name="android:textColor">@color/neutral_300</item>
+    </style>
+
+    <style name="Text.Sm.Regular.Neutron500">
+        <item name="android:textColor">@color/neutral_500</item>
+    </style>
+
+    <style name="Text.Sm.Regular.Neutron700">
+        <item name="android:textColor">@color/neutral_700</item>
+    </style>
+
+    <style name="Text.Sm.Medium" parent="BaseTextSm">
+        <item name="android:fontFamily">@font/prompt_medium</item>
+    </style>
+
+    <style name="Text.Sm.Medium.Error500">
+        <item name="android:textColor">@color/error_500</item>
+    </style>
+
+    <style name="Text.Sm.Medium.Error700">
+        <item name="android:textColor">@color/error_700</item>
+    </style>
+
+    <style name="Text.Sm.Medium.Neutron900">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Sm.Medium.Neutral900">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Sm.Medium.Neutral400">
+        <item name="android:textColor">@color/neutral_400</item>
+    </style>
+
+    <style name="Text.Sm.Bold" parent="BaseTextSm">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Sm.Bold.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <style name="Text.Sm.Bold.Neutral900">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Sm.SemiBold" parent="BaseTextSm">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+        <item name="android:textColor">@color/neutral_700</item>
+    </style>
+
+    <style name="Text.Sm.SemiBold.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <!-- BaseTextXs -->
+    <style name="BaseTextXs" parent="BaseText">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Text.Xs.Regular -->
+    <style name="Text.Xs.Regular" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt</item>
+    </style>
+    <style name="Text.Xs.Regular.16dp.white" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="Text.Xs.Regular.Neutron500">
+        <item name="android:textColor">@color/neutral_500</item>
+    </style>
+
+    <style name="Text.Xs.Regular.Neutron400">
+        <item name="android:textColor">@color/neutral_400</item>
+    </style>
+
+    <style name="Text.Xs.Regular.Neutron300">
+        <item name="android:textColor">@color/neutral_300</item>
+    </style>
+
+    <style name="Text.Xs.Regular.Neutron0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <!-- Text.Xs.Medium -->
+    <style name="Text.Xs.Medium" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt_medium</item>
+    </style>
+
+    <style name="Text.Xs.Medium.Error700">
+        <item name="android:textColor">@color/error_700</item>
+    </style>
+
+    <style name="Text.Xs.Medium.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <!-- Text.Xs.Bold -->
+    <style name="Text.Xs.Bold" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Xs.Semibold" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+    <style name="Text.Xs.Semibold.32dp.white" parent="BaseTextXs">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+        <item name="android:textSize">@dimen/long_32dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Xs.Semibold.Neutral900" parent="BaseTextXs">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Xs.Semibold.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <!-- Text ig -->
+    <style name="BaseTextIg" parent="BaseText">
+        <item name="android:textSize">18dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Text.Ig.Regular" parent="BaseTextIg">
+        <item name="android:fontFamily">@font/prompt</item>
+    </style>
+
+
+    <style name="Text.Ig.Regular.22dp.white" parent="BaseTextIg">
+        <item name="android:fontFamily">@font/prompt</item>
+        <item name="android:textSize">@dimen/long_22dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="Text.Ig.Medium" parent="BaseTextIg">
+        <item name="android:fontFamily">@font/prompt_medium</item>
+    </style>
+
+    <style name="Text.Ig.Medium.Neutral900" parent="BaseTextIg">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Ig.Bold" parent="BaseTextIg">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Ig.Bold.Neutral900">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Ig.SomiBold" parent="BaseTextIg">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <!-- BaseTextMd -->
+    <style name="BaseTextMd" parent="BaseText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Text.Md.SomiBold -->
+    <style name="Text.Md.Semibold.Neutron900">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <style name="Text.Md.Semibold" parent="BaseTextMd">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+
+    <style name="Text.Md.Bold" parent="BaseTextMd">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Md.Bold.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <style name="Text.Md.Regular" parent="BaseTextMd">
+        <item name="android:fontFamily">@font/prompt</item>
+    </style>
+
+    <style name="Text.Md.Medium" parent="BaseTextMd">
+        <item name="android:fontFamily">@font/prompt_medium</item>
+    </style>
+
+    <style name="Text.Md.Medium.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <style name="Text.Md.Regular.Neutron900" parent="BaseTextMd">
+        <item name="android:textColor">@color/neutral_900</item>
+    </style>
+
+    <!-- BaseTextXxs -->
+    <style name="BaseTextXxs" parent="BaseText">
+        <item name="android:textSize">11dp</item>
+        <item name="android:lineSpacingExtra">-1dp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Text.Xxs.Bold" parent="BaseTextXxs">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Xxs.Regular" parent="BaseTextXxs">
+        <item name="android:fontFamily">@font/prompt</item>
+    </style>
+
+    <!-- BaseTextXl -->
+    <style name="BaseTextXl" parent="BaseText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.Xl.Bold" parent="BaseTextXl">
+        <item name="android:fontFamily">@font/prompt_semibold</item>
+    </style>
+
+    <style name="Text.Xl.Bold.Neutral0">
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <style name="Input.Normal" parent="AppEditText">
+        <item name="android:background">@drawable/input_normal</item>
+        <item name="fontFamily">@font/prompt</item>
+        <item name="android:textColor">@color/neutral_900</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Text.Bottom.Confirm" parent="Text.Md.Bold">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/neutral_200</item>
+        <item name="android:textColor">@color/neutral_0</item>
+    </style>
+
+    <!-- Edit text Id + password -->
+    <style name="Input.Login" parent="AppEditText">
+        <item name="android:textColor">@color/neutral_900</item>
+        <item name="hintTextColor">@color/neutral_300</item>
+        <item name="fontFamily">@font/prompt</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textCursorDrawable">@drawable/shape_cursor_input_login</item>
+       <!-- <item name="android:backgroundTint">@color/neutral_100</item>-->
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/long_16dp</item>
+        <item name="colorControlNormal">@color/neutral_100</item>
+        <item name="colorControlActivated">@color/neutral_900</item>
+        <item name="colorControlHighlight">@color/neutral_900</item>
+    </style>
+
+
+    <style name="Input.Error" parent="AppEditText">
+        <item name="android:background">@drawable/input_error</item>
+        <item name="fontFamily">@font/prompt</item>
+        <item name="android:textColor">@color/neutral_900</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/second_500</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="android:background">@drawable/bg_textlines</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabRippleColor">@null</item>
+    </style>
+
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/prompt</item>
+        <item name="android:textColor">@color/neutral_500</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="customDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowMinWidthMajor">0dp</item>
+        <item name="windowMinWidthMinor">0dp</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetTheme.Corner">
+        <item name="bottomSheetStyle">@style/bottomSheetBackground</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetTheme.Fixed">
+        <item name="bottomSheetStyle">@style/bottomSheetBackground</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <item name="android:navigationBarColor">@color/color_navigation_bar</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="bottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_trans</item>
+    </style>
+
+    <style name="bottomNavigationText.Inactive" parent="Text.Xs.Regular.Neutron0">
+        <item name="android:textColor">@color/neutral_300</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="bottomNavigationText.Active" parent="Text.Xs.Regular.Neutron300">
+        <item name="android:textColor">@color/primary_500</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ucrop_SaveButtonWidget" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">20dp</item>
+        <item name="android:background">@drawable/button_positive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_button_positive</item>
+        <item name="android:paddingStart">@dimen/long_16dp</item>
+        <item name="android:paddingEnd">@dimen/long_16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/prompt_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>
